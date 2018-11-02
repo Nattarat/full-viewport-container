@@ -1,0 +1,59 @@
+// Variables
+$breakpoint-mobile: 414px;
+
+// Global
+body {
+  margin: 0;
+  padding: 0;
+}
+
+// Full viewport container
+.full-viewport-container {
+  height: 100vh;
+
+  @media (max-width: $breakpoint-mobile) {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .calibration-image {
+    position: absolute;
+    z-index: 9;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+// Content container
+.content-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  background-color: aquamarine;
+}
+
+.is-safari-mobile {
+  .content-container {
+    @media (max-width: $breakpoint-mobile) {
+      top: calc(100vh - 75px);
+    }
+  }
+}
+
+.is-chrome-mobile {
+  .content-container {
+    @media (max-width: $breakpoint-mobile) {
+      top: calc(100vh - 56px);
+    }
+  }
+}
