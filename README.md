@@ -1,0 +1,6 @@
+# CSS Full viewport container
+วิธีการแก้ปัญหาการใช้ 100vh ใน Mobile(iOS/Android) ที่มีสาเหตุมาจากการ Resize ของ URL bar
+
+## References:
+- https://developers.google.com/web/updates/2016/12/url-bar-resizing
+- https://bokand.github.io/demo/urlbarsize.html
