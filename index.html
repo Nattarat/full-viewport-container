@@ -23,6 +23,10 @@
         $('html').addClass('is-safari-mobile');
       } else if (is.android() && is.chrome()) {
         $('html').addClass('is-chrome-mobile');
+      } else if ((is.iphone() || is.ipad()) && !is.chrome()) {
+        // use '!is.chrome()' because is.chrome() returns false on both iOS Safari and iOS Chrome (bug)
+        // https://github.com/arasatasaygin/is.js/issues/258
+        $('html').addClass('is-chrome-mobile-ios');
       }
     });
   </script>

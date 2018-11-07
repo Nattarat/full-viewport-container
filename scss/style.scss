@@ -57,3 +57,11 @@ body {
     }
   }
 }
+
+.is-chrome-mobile-ios {
+  .content-container {
+    @media (max-width: $breakpoint-mobile) {
+      top: 100vh;
+    }
+  }
+}

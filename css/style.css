@@ -44,3 +44,7 @@ body {
 @media (max-width: 414px) {
   .is-chrome-mobile .content-container {
     top: calc(100vh - 56px); } }
+
+@media (max-width: 414px) {
+  .is-chrome-mobile-ios .content-container {
+    top: 100vh; } }
